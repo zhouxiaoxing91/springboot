@@ -17,6 +17,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.mvc.AbstractController;
 
 import java.util.List;
 import java.util.Map;
@@ -28,7 +30,7 @@ import java.util.Map;
 //@RestController
 @EnableAutoConfiguration(exclude=WebMvcAutoConfiguration.class)
 //@RequestMapping("/home")
-public class Application /*extends AbstractController*/ {
+public class Application extends WebMvcConfigurerAdapter {
     private static Logger log = LoggerFactory.getLogger(Application.class);
 
 //    @Autowired

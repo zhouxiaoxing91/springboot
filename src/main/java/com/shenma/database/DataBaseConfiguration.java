@@ -1,6 +1,7 @@
 package com.shenma.database;
 
-import com.github.pagehelper.PageInterceptor;
+import com.github.pagehelper.PageHelper;
+import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -52,6 +53,19 @@ public class DataBaseConfiguration extends DruidDataSourceConfig implements Tran
 //		interceptor.setProperties(properties);
 //		// 分页拦截器-end
 
+
+		// 分页插件,插件无非是设置mybatis的拦截器
+		PageHelper pageHelper = new PageHelper();
+		Properties properties = new Properties();
+		properties.setProperty("reasonable", "true");
+		properties.setProperty("supportMethodsArguments", "true");
+		properties.setProperty("returnPageInfo", "check");
+		properties.setProperty("params", "count=countSql");
+		properties.setProperty("dialect", "mysql");
+		pageHelper.setProperties(properties);
+
+		//添加插件
+		bean.setPlugins(new Interceptor[]{ pageHelper });
 		try {
 //			bean.getObject().getConfiguration().addInterceptor(interceptor);
 			return bean.getObject();

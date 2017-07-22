@@ -6,19 +6,17 @@ package com.shenma.controller;
 import java.util.List;
 import java.util.Map;
 
+import com.github.pagehelper.Page;
 import com.github.pagehelper.PageInfo;
-import com.quick.mybatis.model.PageModel;
 import com.shenma.mapper.UserMapper;
 import com.shenma.model.User;
 import com.shenma.util.MapUtil;
-import com.shenma.util.MapUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
 import com.github.pagehelper.PageHelper;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 
@@ -33,13 +31,17 @@ public class WebController {
     public String selectAge(int page, int pageSize){
         ModelAndView modelAndView = new ModelAndView("index");
 
-        PageHelper.startPage(page, pageSize, true);
+        // PageHelper.startPage(page, pageSize, true);
+        Page<?> page21 = PageHelper.startPage(page, pageSize);
         List<Map<String, Object>> user = mapper.getUserPageList(50);
+
         try {
-            PageInfo<User> pageInfo = new PageInfo<User>( MapUtil.convertListMap2ListBean(user, User.class) );
-            System.out.println("pageInfo.getTotal() "+pageInfo.getTotal());
-            System.out.println("pageInfo.getPages() "+pageInfo.getPages());
-            System.out.println("pageInfo.getPageSize() "+pageInfo.getPageSize());
+             // PageInfo<User> pageInfo = new PageInfo<User>( MapUtil.convertListMap2ListBean(user, User.class) );
+             PageInfo<?> pageInfo = page21.toPageInfo() ;
+            System.out.println("page21.getTotal() "+pageInfo.getTotal() );
+            System.out.println("page21.getPages() "+pageInfo.getPages());
+            System.out.println("page21.getPageSize() "+pageInfo.getPageSize());
+            System.out.println("page21.getPageNum() "+pageInfo.getPageNum());
         }catch (Exception e){
         }
 
