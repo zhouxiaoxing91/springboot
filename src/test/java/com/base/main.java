@@ -1,9 +1,7 @@
-package mapper;
+package com.base;
 
 import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
 import com.shenma.mapper.UserMapper;
-import com.shenma.model.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
