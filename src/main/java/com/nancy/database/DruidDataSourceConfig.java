@@ -1,4 +1,4 @@
-package com.shenma.database;
+package com.nancy.database;
 
 import com.alibaba.druid.pool.DruidDataSource;
 

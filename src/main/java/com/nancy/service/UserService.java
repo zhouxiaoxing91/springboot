@@ -1,7 +1,7 @@
-package com.shenma.service;
+package com.nancy.service;
 
 
-import com.shenma.model.User;
+import com.nancy.model.User;
 
 import java.util.List;
 

@@ -1,27 +1,15 @@
-package com.shenma.controller;
+package com.nancy.controller;
 
 /**
  * Created by sh00912 on 2017/7/17.
  */
-import java.util.List;
-import java.util.Map;
 
-import com.github.pagehelper.Page;
-import com.github.pagehelper.PageInfo;
-import com.shenma.mapper.UserMapper;
-import com.shenma.model.User;
-import com.shenma.service.UserService;
-import com.shenma.util.MapUtil;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-import com.github.pagehelper.PageHelper;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 
-@RestController
+@Controller
 public class WebController {
 
 //    @Autowired
@@ -56,4 +44,10 @@ public class WebController {
 //        }
 //        return "index";
 //    }
+
+
+    @RequestMapping(value = "/index", method = {RequestMethod.GET})
+    public String index() {
+        return "index";
+    }
 }

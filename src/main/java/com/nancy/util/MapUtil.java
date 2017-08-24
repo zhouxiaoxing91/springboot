@@ -1,4 +1,4 @@
-package com.shenma.util;
+package com.nancy.util;
 
 import org.apache.commons.beanutils.BeanUtils;
 import org.slf4j.Logger;

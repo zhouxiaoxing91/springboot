@@ -1,11 +1,11 @@
-package com.shenma.database;
+package com.nancy.database;
 
 /**
  * All rights Reserved, Designed By guangfeng.zhou
  *
  * @version V1.0
  * @Project: springboot
- * @Package: com.shenma.database
+ * @Package: com.nancy.database
  * @Description: (用一句话描述该文件做什么)
  * @author: guangfeng.zhou
  * @date: 2017/7/28 16:31

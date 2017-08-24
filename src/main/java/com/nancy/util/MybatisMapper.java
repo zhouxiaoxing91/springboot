@@ -1,4 +1,4 @@
-package com.shenma.util;
+package com.nancy.util;
 
 import org.springframework.stereotype.Repository;
 import tk.mybatis.mapper.common.Mapper;
@@ -10,7 +10,7 @@ import tk.mybatis.mapper.common.base.insert.InsertMapper;
  *
  * @version V1.0
  * @Project: springboot
- * @Package: com.shenma.util
+ * @Package: com.nancy.util
  * @Description: (用一句话描述该文件做什么)
  * @author: guangfeng.zhou
  * @date: 2017/7/28 16:34

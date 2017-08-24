@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE com.mapper.com.base.mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-com.mapper.com.base.mapper.dtd" >
-<com.mapper.com.base.mapper namespace="com.shenma.com.mapper.com.base.mapper.UserMapper" >
+<com.mapper.com.base.mapper namespace="com.nancy.com.mapper.com.base.mapper.UserMapper" >
 
-  <resultMap id="BaseResultMap" type="com.shenma.model.User" >
+  <resultMap id="BaseResultMap" type="com.nancy.model.User" >
     <id column="id" property="id"  />
     <result column="age" property="age"  />
     <result column="username" property="username"  />

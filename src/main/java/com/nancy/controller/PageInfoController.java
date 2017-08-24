@@ -1,17 +1,6 @@
-package com.shenma.controller;
+package com.nancy.controller;
 
-import com.github.pagehelper.Page;
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
-import com.shenma.model.User;
-import com.shenma.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
-
-import java.util.List;
 
 /**
  * Created by pandayeung on 2017/7/22.

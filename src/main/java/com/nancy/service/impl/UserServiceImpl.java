@@ -1,10 +1,9 @@
-package com.shenma.service.impl;
+package com.nancy.service.impl;
 
-import com.shenma.mapper.UserMapper;
-import com.shenma.model.User;
-import com.shenma.service.UserService;
-import com.shenma.util.MapUtil;
-import com.shenma.util.MapUtils;
+import com.nancy.mapper.UserMapper;
+import com.nancy.model.User;
+import com.nancy.service.UserService;
+import com.nancy.util.MapUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
