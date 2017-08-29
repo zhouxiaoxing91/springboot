@@ -63,7 +63,8 @@ public class DataBaseConfiguration extends DruidDataSourceConfig implements Tran
 		//添加XML目录
 		ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
 		try {
-			bean.setMapperLocations(resolver.getResources("classpath*:com/nancy/mapper/*.xml"));
+			bean.setMapperLocations(resolver.getResources("classpath*:/mapper/*.xml"));
+
 			return bean.getObject();
 		} catch (Exception e) {
 			e.printStackTrace();
