@@ -9,8 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 public class UserSecurityInterceptor implements HandlerInterceptor {
 
 
-	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
-			{
+	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler){
 		return true;
 	}
 

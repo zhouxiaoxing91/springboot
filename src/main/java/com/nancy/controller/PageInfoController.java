@@ -1,11 +1,9 @@
 package com.nancy.controller;
 
-import org.springframework.web.bind.annotation.RestController;
-
 /**
  * Created by pandayeung on 2017/7/22.
  */
-@RestController
+//@RestController
 public class PageInfoController {
 
 //    @Autowired

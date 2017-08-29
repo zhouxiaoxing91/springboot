@@ -12,7 +12,6 @@ package com.nancy.database;
  */
 
 import org.apache.ibatis.session.ExecutorType;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.core.io.Resource;
 
 /**
@@ -20,7 +19,7 @@ import org.springframework.core.io.Resource;
  *
  * @author Eddú Meléndez
  */
-@ConfigurationProperties(prefix = MybatisProperties.MYBATIS_PREFIX)
+//@ConfigurationProperties(prefix = MybatisProperties.MYBATIS_PREFIX)
 public class MybatisProperties {
 
     public static final String MYBATIS_PREFIX = "mybatis";
