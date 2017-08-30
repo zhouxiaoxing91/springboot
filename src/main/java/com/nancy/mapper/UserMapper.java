@@ -14,6 +14,6 @@ import java.util.Map;
 */
 @Repository("userMapper")
 public interface UserMapper extends MybatisMapper<User> {
-    @Select("select aa.*, bb.detail from user aa where aa.age < ${age} ")
+    @Select("select aa.* from user aa where aa.age < ${age} ")
     public List<Map<String, Object>>  getUserPageList(@Param("age") int age) ;
 }

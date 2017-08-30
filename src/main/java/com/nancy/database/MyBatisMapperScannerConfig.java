@@ -16,8 +16,8 @@ public class MyBatisMapperScannerConfig {
 	public MapperScannerConfigurer mapperScannerConfigurer() {
 		MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
 		mapperScannerConfigurer.setSqlSessionFactoryBeanName("sqlSessionFactory");
-//		mapperScannerConfigurer.setBasePackage("com.nancy.mapper;com.tk.mapper;");
-		mapperScannerConfigurer.setBasePackage("com.nancy.mapper");
+		mapperScannerConfigurer.setBasePackage("com.nancy.mapper;com.tk.mapper;");
+//		mapperScannerConfigurer.setBasePackage("com.nancy.mapper");
 
 		return mapperScannerConfigurer;
 	}

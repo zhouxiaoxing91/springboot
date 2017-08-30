@@ -17,19 +17,19 @@ import java.util.Map;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private UserMapper mapper;
+    private UserMapper userMapper;
 
     @Override
     public List<User> getUserPageList(int age) {
 
-        List<Map<String, Object>> list = mapper.getUserPageList(age) ;
+//        List<Map<String, Object>> list = userMapper.getUserPageList(age) ;
 
-        List<User> users = null ;
-        try {
-            users = MapUtil.convertListMap2ListBean(list, User.class);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        List<User> users = userMapper.selectAll() ;
+//        try {
+//            users = MapUtil.convertListMap2ListBean(list, User.class);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
         return users ;
 
     }
