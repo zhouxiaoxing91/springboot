@@ -1,6 +1,7 @@
 package com.nancy.model;
 
 
+import com.alibaba.fastjson.JSON;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -24,13 +25,6 @@ public class User implements Serializable {
 
     @Override
     public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", age=" + age +
-                ", username='" + username + '\'' +
-                ", sex='" + sex + '\'' +
-                ", address='" + address + '\'' +
-                ", birthday=" + birthday +
-                '}';
+        return JSON.toJSONString(this);
     }
 }

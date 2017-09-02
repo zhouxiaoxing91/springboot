@@ -1,9 +1,9 @@
 package com.nancy.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.nancy.mapper.UserMapper;
 import com.nancy.model.User;
 import com.nancy.service.UserService;
-import com.nancy.util.MapUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +24,7 @@ public class UserServiceImpl implements UserService {
 
 //        List<Map<String, Object>> list = userMapper.getUserPageList(age) ;
 
+        PageHelper.startPage(1, 3) ;
         List<User> users = userMapper.selectAll() ;
 //        try {
 //            users = MapUtil.convertListMap2ListBean(list, User.class);
