@@ -16,6 +16,5 @@ import tk.mybatis.mapper.common.base.select.SelectAllMapper;
  * @author: guangfeng.zhou
  * @date: 2017/7/28 16:34
  */
-@Repository("mybatisMapper")
 public interface MybatisMapper<T> extends Mapper<T>, InsertMapper<T>, MySqlMapper<T>,SelectAllMapper<T> {
 }
