@@ -12,7 +12,6 @@ import java.util.concurrent.Executors;
  * All rights Reserved, Designed By sh00925
  *
  * @version V1.0
- * @Project: nancy-ccmstask-parent
  * @Package: com.nancy.ccms.handle
  * @Description: (定时任务之间并行)
  * @author:
