@@ -183,9 +183,9 @@ public class CommonUtil {
                                                                           InvocationTargetException,
                                                                           InstantiationException,
                                                                           IllegalAccessException {
-        List listBean = new ArrayList<>();
+        List<T> listBean = new ArrayList<>();
         for (int x=0,length=list.size(); x<length; x++) {
-            Object dst = T.newInstance();
+            T dst = T.newInstance();
             BeanUtils.copyProperties(dst, list.get(x));
             listBean.add(dst);
         }
