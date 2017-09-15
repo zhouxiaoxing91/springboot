@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.nancy</groupId>
-    <artifactId>springboot</artifactId>
+    <artifactId>springboot-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
-    <name>springboot</name>
+    <packaging>pom</packaging>
+    <name>springboot-parent</name>
     <description>Demo project for Spring WebMvc</description>
 
     <properties>
@@ -457,9 +457,13 @@
             </exclusions>
         </dependency>
 
-
-
     </dependencies>
+
+    <modules>
+        <module>springboot-web</module>
+        <module>springboot-service</module>
+        <module>springboot-client</module>
+    </modules>
 
     <profiles>
         <profile>
