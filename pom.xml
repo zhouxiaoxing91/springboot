@@ -456,13 +456,13 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
     </dependencies>
 
     <modules>
         <module>springboot-web</module>
         <module>springboot-service</module>
         <module>springboot-client</module>
+        <module>springboot-job</module>
     </modules>
 
     <profiles>

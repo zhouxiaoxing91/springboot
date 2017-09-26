@@ -16,7 +16,7 @@
 // * @Package: com
 // * @Description: springboot测试类
 // *  1、SpringJUnit支持，由此引入Spring-Test框架支持
-// *  2、SpringBoot工程的Application启动类 1.5以后， @SpringApplicationConfiguration(classes = ShenmaComponentApplication.class) -- 1.4使用
+// *  2、SpringBoot工程的Application启动类 1.5以后， @SpringApplicationConfiguration(classes = .class) -- 1.4使用
 // *  3、Web项目，Junit需要模拟ServletContext，因此需要测试类加上@WebAppConfiguration。
 // * @author: guangfeng.zhou
 // * @date: 2017/7/25 14:21
